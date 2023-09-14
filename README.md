@@ -4,9 +4,9 @@ On the postgres container terminal execute the following command to access
 psql -h localhost -U postgres
 ```
 
-this should give you access to the public schema
+This should give you access to the public schema
 
-view existing databases
+View existing databases
 
 ```bash
 \l
@@ -14,14 +14,15 @@ view existing databases
 
 List of databases
 
-| Name      | Owner    | Encoding | Collate    | Ctype      | Access privileges |
-| --------- | -------- | -------- | ---------- | ---------- | ----------------- |
-| Lux       | postgres | UTF8     | en_US.utf8 | en_US.utf8 |                   |
-| postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 |                   |
-| template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres +     |
-| template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres +     |
+| Name      | Owner      | Encoding | Collate    | Ctype                 | Access privileges      |
+| --------- | ---------- | -------- | ---------- | --------------------- | ---------------------- |
+| postgres  | categories | UTF8     | en_US.utf8 | en_US.utf8            |                        |
+| template0 | postgres   | UTF8     | en_US.utf8 | en_US.utf8            | =c/postgres          + |
+|           |            |          |            | postgres=CTc/postgres |                        |
+| template1 | postgres   | UTF8     | en_US.utf8 | en_US.utf8            | =c/postgres          + |
+|           |            |          |            | postgres=CTc/postgres |                        |
 
-(4 rows)
+(3 rows)
 
 
 ```bash
@@ -34,6 +35,8 @@ IMPORT sql file into the database
 psql -U user_name -d database_name -f file.sql
 ```
 
+
+
 CONNECT to the specific database you imported the sql into
 
 ```bash
@@ -44,6 +47,8 @@ psql -U username -d database_name
 \c [database_name]
 ```
 
+
+
 To get more information on tables, you can use the \dt+ command. It will add the size and description columns
 
 ```bash
@@ -52,15 +57,27 @@ To get more information on tables, you can use the \dt+ command. It will add the
 
 
 
-List of relations
+To get more information on a specific schema, use the  \dt command. It will list all relations.
 
-| Schema | Name                   | Type  |
-| ------ | ---------------------- | ----- |
-| public | categories             | table |
-| public | customer_customer_demo | table |
-| public | customer_demographics  | table |
-| public | customers              | table |
-| public | employee_territories   | table |
-| public | employees              | table |
-| public | order_details          | table |
-| public | orders                 | table |
+```bash
+\dt psql_schema.
+```
+
+| Schema      | Name                   | Type  | Owner    |
+| ----------- | ---------------------- | ----- | -------- |
+| psql_schema | categories             | table | postgres |
+| psql_schema | customer_customer_demo | table | postgres |
+| psql_schema | customer_demographics  | table | postgres |
+| psql_schema | customers              | table | postgres |
+| psql_schema | employee_territories   | table | postgres |
+| psql_schema | employees              | table | postgres |
+| psql_schema | order_details          | table | postgres |
+| psql_schema | orders                 | table | postgres |
+| psql_schema | products               | table | postgres |
+| psql_schema | region                 | table | postgres |
+| psql_schema | shippers               | table | postgres |
+| psql_schema | suppliers              | table | postgres |
+| psql_schema | territories            | table | postgres |
+| psql_schema | us_states              | table | postgres |
+
+(14 rows)
