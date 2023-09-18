@@ -24,7 +24,6 @@ List of databases
 
 (3 rows)
 
-
 ```bash
 CREATE database [database name]
 ```
@@ -34,8 +33,6 @@ IMPORT sql file into the database
 ```bash
 psql -U user_name -d database_name -f file.sql
 ```
-
-
 
 CONNECT to the specific database you imported the sql into
 
@@ -47,15 +44,11 @@ psql -U username -d database_name
 \c [database_name]
 ```
 
-
-
 To get more information on tables, you can use the \dt+ command. It will add the size and description columns
 
 ```bash
 \dt+
 ```
-
-
 
 To get more information on a specific schema, use the  \dt command. It will list all relations.
 
@@ -81,3 +74,22 @@ To get more information on a specific schema, use the  \dt command. It will list
 | psql_schema | us_states              | table | postgres |
 
 (14 rows)
+
+# Create virtual environment to install DBT
+
+Activate the environment
+
+```
+source dbt-env/bin/activate
+```
+
+Install dbt
+
+`pip install dbt-postgres`
+
+Initialise dbt
+
+
+Install Metabase using Docker
+
+* Added metabase service in the `docker-compose` yml
