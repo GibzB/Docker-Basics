@@ -89,6 +89,11 @@ Install dbt
 
 Initialise dbt
 
+`dbt init`
+
+Point dbt to the warehouse(postgress in running locally) by editing the `profiles.yml` run the debug command
+
+`dbt debug`
 
 Install Metabase using Docker
 

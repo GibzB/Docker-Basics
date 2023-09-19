@@ -1,0 +1,57 @@
+[0m17:23:57.720593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058657b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076e7760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076e7e80>]}
+
+
+============================== 17:23:57.769210 | 68a42826-a1bc-4f97-bbae-a0dff91cba61 ==============================
+[0m17:23:57.769210 [info ] [MainThread]: Running with dbt=1.6.2
+[0m17:23:57.769791 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/bizee/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:23:57.770293 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/bizee/.dbt')}
+[0m17:23:57.770639 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m17:24:09.574264 [debug] [MainThread]: Starter project path: /Users/bizee/Documents/Code_Projects/Docker-Basics/dbt-env/lib/python3.10/site-packages/dbt/include/starter_project
+[0m17:24:09.585213 [info ] [MainThread]: 
+Your new dbt project "postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:24:09.585756 [info ] [MainThread]: Setting up your profile.
+[0m17:24:16.239123 [info ] [MainThread]: Profile postgres written to /Users/bizee/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m17:24:16.240400 [debug] [MainThread]: Command `dbt init` succeeded at 17:24:16.240211 after 18.56 seconds
+[0m17:24:16.240890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058657b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10671e5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066e3070>]}
+[0m17:24:16.241441 [debug] [MainThread]: Flushing usage events
+[0m17:26:31.007198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068e1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a9c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aada80>]}
+
+
+============================== 17:26:31.011713 | 25f06e77-ced2-4c6e-a556-131fb520bfb7 ==============================
+[0m17:26:31.011713 [info ] [MainThread]: Running with dbt=1.6.2
+[0m17:26:31.012238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/bizee/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:59.013906 [debug] [MainThread]: Starter project path: /Users/bizee/Documents/Code_Projects/Docker-Basics/dbt-env/lib/python3.10/site-packages/dbt/include/starter_project
+[0m17:26:59.029912 [info ] [MainThread]: 
+Your new dbt project "dbt_1" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:26:59.030906 [info ] [MainThread]: Setting up your profile.
+[0m17:27:02.633310 [debug] [MainThread]: Command `dbt init` succeeded at 17:27:02.633052 after 31.68 seconds
+[0m17:27:02.633850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068e1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a9c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104516da0>]}
+[0m17:27:02.634443 [debug] [MainThread]: Flushing usage events
